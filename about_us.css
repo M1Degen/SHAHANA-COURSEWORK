@@ -1,0 +1,157 @@
+body, h1, p, blockquote, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333; 
+    color: white;
+    padding: 10px 0;
+}
+.logo-container {
+    font-weight: bold;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    font-weight: bold;
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.right-nav input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem 0 0 0.25rem;
+    border-right: none;
+    outline: none;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+}
+
+.logout-btn {
+    padding: 0.5rem 1rem;
+    background: #e40000;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.logout-btn:hover {
+    background: #a30000;
+}
+
+.about-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.about-section p {
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerLinks li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; 
+    }
+
+    .about-section {
+        width: 95%;
+    }
+}

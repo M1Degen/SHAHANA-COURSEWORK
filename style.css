@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+    min-height: 100vh; 
+  
+}
+header {
+    background-color: #333; 
+    color: white;
+    padding: 10px 0;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.imgcontainer{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.right-nav input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem 0 0 0.25rem;
+    border-right: none;
+    outline: none;
+}
+
+.search-btn {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+}
+
+.logout-btn {
+    padding: 0.5rem 1rem;
+    background: #e40000;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.logout-btn:hover {
+    background: #a30000;
+}
+
+
+
+.logo-container {
+    width: 150px;
+    border: 3px solid #fff;
+    height: 70px;
+
+}
+.input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
+}
+
+
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.recipe-image {
+    border: none;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.recipe-image >img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.formContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.register-login-form h2, .register-login-form p {
+    margin: 0 0 20px 0;
+}
+
+.register-login-form input[type=email], .register-login-form input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-login-form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-login-form button:hover {
+    background-color: #45a049;
+}
+
+
+.testimonialsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+
+.testimonialItem {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 8px;
+    height: 300px;
+} 
+
+.testimonialItem img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+
+.aboutSection, .joinUsSection {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 20px 0;
+}
+
+.joinUsButton {
+    display: inline-block;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.joinUsButton:hover {
+    background-color: #005f73;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerLinks li a:hover {
+    text-decoration: underline;
+}
+
+.cheffooter{
+    height: 100%;
+    margin: 0;
+    
+
+}
+
+.LR{
+    position: relative;
+    padding-left: 43%;
+}
