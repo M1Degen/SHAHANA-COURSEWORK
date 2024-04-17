@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi's food blog registration page</title>
+    <link rel="stylesheet" href="about_us.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo-container">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        Chi's Food blog
+                    </a>
+                </div>
+                <ul class="navbar left-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="chef_dashboard.php">Account</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="registration-form">
+        <form id="registration-form" action="register.php" method="post">
+            <h2>Register As Chef/Cook Or Recipe seeker</h2>
+            <div class="inputDetail">
+                <label for="role">Register as:</label> <br>
+                    <select id="role" name="role" required="inputDetail">
+                        <option value="">Select your role</option>
+                        <option value="cook">Cook</option>
+                        <option value="recipe_seeker">Recipe Seeker</option>
+                    </select> <br>
+                <label for="firstname">First Name</label> <br>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="inputDetail">
+                <label for="last_name">Last Name</label> <br>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="inputDetail">
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="inputDetail">
+                <label for="password">Password</label> <br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="inputDetail">
+                <label for="confirm_password">Confirm Password</label> <br>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+             <button type="submit">Register</button>
+        </form>
+    </div>
+    </main>
+    <script>
+          document.getElementById('registration-form').onsubmit = function(e) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm_password').value;
+            if (password !== confirmPassword) {
+                e.preventDefault(); 
+                alert('Passwords do not match.');
+            }
+        };
+    </script>
+      <footer>
+        <ul class="footerLinks">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p> Chi's food blog | © 2024</p>
+    </footer>
+</body>
+</html>

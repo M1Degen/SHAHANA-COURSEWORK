@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Recipes</a></li>
+                <li> <a href="about_us.html">About</a></li>
+                <li> <a href="faq.php">FAQ</a></li>
+                <li> <a href="register.html">Register/log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Section 1:  -->
+        <section class="backgroundImage">
+            <div class="formContainer">
+                <form class="register-login-form" action="login.php" method="post">
+                    <h2>Welcome to our foodblog filled with assorted Recipes</h2>
+                    <p>Join us to explore unending food recipes.</p>
+                    <p>Log in as a:</p>
+                    <!-- Dropdown for role selection -->
+                    <select name="role" required class = "input">
+                        <option value="#">Select your role</option>
+                        <option value="cook">Cook</option>
+                        <option value="recipe_seeker">Recipe Seeker</option>
+                    </select>
+                    <input type="email" name="email"placeholder="Email address" required="input">
+                    <input type="password" name="password" placeholder="Password" required="input">
+                    <button type="submit">Log In</button>
+                    <p>Don't have an account as a chef/cook yet? <a href="register.html">Register here</a></p>
+                </form>
+            </div>
+        </section>
+        <!-- Section 2: Testimonials Grid -->
+        <section class="testimonialsGrid">
+            <div class="testimonialItem">
+                <img src="images/OIP.jpeg" alt="Testimonial 1">
+                <p>"Joining this  website has expanded my culinary horizons beyond measure." - Alex</p>
+            </div>
+            <div class="testimonialItem">
+                <img src="images/delicious-asian-noodles-concept_23-2148773773.jpg" alt="Testimonial 2">
+                <p>"I have discovered dishes I  never knew existed and now they're family favorites!" - Casey</p>
+            </div>
+            <div class="testimonialItem">
+                <img src="images/delicious-chinese-food-asian-cuisine_841229-24577.jpg" alt="Testimonial 3">
+                <p>"The variety of recipes available has truly enriched my cooking experience." - Jamie</p>
+            </div>
+            <div class="testimonialItem">
+                <img src="images/penne-pasta-tomato-sauce-with-meat-tomatoes-decorated-with-pea-sprouts-dark-table_2829-3412.jpg" alt="Testimonial 4">
+                <p>"Every recipe I've tried has turned out amazing. Highly recommend this platform!" - Pat</p>
+            </div>
+        </section>
+        
+        <section class="aboutSection">
+            <h3>About Us</h3>
+            <p>Discover the joy of cooking with our vast collection of recipes from around the world where the best chefs around the world share their own recipes.</p>
+        </section>
+    
+        <section class="joinUsSection">
+            <h3>Are you ready to discover new Recipes?</h3>
+            <a href="register.html" class="joinUsButton">Join us</a>
+        </section>
+    </main>
+    <footer>
+        <ul class="footerLinks">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
